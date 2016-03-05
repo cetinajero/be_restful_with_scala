@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="be_restful_with_scala_2.11"
+		revision="0.1-SNAPSHOT"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160305155638"/>
+	<dependencies>
+		<module organisation="com.github.dvarelap" name="peregrine_2.11">
+			<revision name="1.2.2" status="release" pubdate="20151111132830" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3878" time="0" location="/Users/cetinajero/.ivy2/cache/com.github.dvarelap/peregrine_2.11/ivy-1.2.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/github/dvarelap/peregrine_2.11/1.2.2/peregrine_2.11-1.2.2.pom"/>
+				<caller organisation="default" name="be_restful_with_scala_2.11" conf="test, compile, runtime" rev="1.2.2" rev-constraint-default="1.2.2" rev-constraint-dynamic="1.2.2" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="peregrine_2.11" type="jar" ext="jar" status="successful" details="" size="1347289" time="10328" location="/Users/cetinajero/.ivy2/cache/com.github.dvarelap/peregrine_2.11/jars/peregrine_2.11-1.2.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/github/dvarelap/peregrine_2.11/1.2.2/peregrine_2.11-1.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.spullara.mustache.java" name="scala-extensions-2.11">
+			<revision name="0.9.1" status="release" pubdate="20150912050101" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/spullara/mustache.java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3738" time="0" location="/Users/cetinajero/.ivy2/cache/com.github.spullara.mustache.java/scala-extensions-2.11/ivy-0.9.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/github/spullara/mustache/java/scala-extensions-2.11/0.9.1/scala-extensions-2.11-0.9.1.pom"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="1.2.2"/>
+				<artifacts>
+					<artifact name="scala-extensions-2.11" type="jar" ext="jar" status="successful" details="" size="7944" time="1171" location="/Users/cetinajero/.ivy2/cache/com.github.spullara.mustache.java/scala-extensions-2.11/jars/scala-extensions-2.11-0.9.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/github/spullara/mustache/java/scala-extensions-2.11/0.9.1/scala-extensions-2.11-0.9.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.spullara.mustache.java" name="compiler">
+			<revision name="0.9.1" status="release" pubdate="20150824171606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/spullara/mustache.java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3273" time="0" location="/Users/cetinajero/.ivy2/cache/com.github.spullara.mustache.java/compiler/ivy-0.9.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/github/spullara/mustache/java/compiler/0.9.1/compiler-0.9.1.pom"/>
+				<caller organisation="com.github.spullara.mustache.java" name="scala-extensions-2.11" conf="compile, runtime" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="0.9.1"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="1.2.2"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="0.8.18" rev-constraint-default="0.8.18" rev-constraint-dynamic="0.8.18" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="compiler" type="jar" ext="jar" status="successful" details="" size="98451" time="1634" location="/Users/cetinajero/.ivy2/cache/com.github.spullara.mustache.java/compiler/jars/compiler-0.9.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/github/spullara/mustache/java/compiler/0.9.1/compiler-0.9.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.8.18" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.9.1"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="1.2.2"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="0.8.18" rev-constraint-default="0.8.18" rev-constraint-dynamic="0.8.18" callerrev="1.13.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="twitter-server_2.11">
+			<revision name="1.13.0" status="release" pubdate="20150828201221" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/twitter-server" extra-info.apiURL="https://twitter.github.io/twitter-server/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6203" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/twitter-server_2.11/ivy-1.13.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/twitter-server_2.11/1.13.0/twitter-server_2.11-1.13.0.pom"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="1.13.0" rev-constraint-default="1.13.0" rev-constraint-dynamic="1.13.0" callerrev="1.2.2"/>
+				<artifacts>
+					<artifact name="twitter-server_2.11" type="jar" ext="jar" status="successful" details="" size="759080" time="7732" location="/Users/cetinajero/.ivy2/cache/com.twitter/twitter-server_2.11/jars/twitter-server_2.11-1.13.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/twitter-server_2.11/1.13.0/twitter-server_2.11-1.13.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150724210253" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/Users/cetinajero/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.2.4"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="successful" details="" size="671138" time="8718" location="/Users/cetinajero/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.5"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.2.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-zipkin_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828201230" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="11333" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-zipkin_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-zipkin_2.11/6.28.0/finagle-zipkin_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="finagle-zipkin_2.11" type="jar" ext="jar" status="successful" details="" size="188359" time="3521" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-zipkin_2.11/jars/finagle-zipkin_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-zipkin_2.11/6.28.0/finagle-zipkin_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11">
+			<revision name="2.4.4" status="release" pubdate="20141201214100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleScala" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4486" time="0" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.4.4/jackson-module-scala_2.11-2.4.4.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="6.28.0"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="1.2.2"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="jackson-module-scala_2.11" type="bundle" ext="jar" status="successful" details="" size="538018" time="5595" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/bundles/jackson-module-scala_2.11-2.4.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.4.4/jackson-module-scala_2.11-2.4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.6" status="release" pubdate="20131008215654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<metadata-artifact status="no" details="" size="4124" time="0" location="/Users/cetinajero/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/cetinajero/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.4.4" status="release" pubdate="20141124190200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="6108" time="0" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="2.4.4"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="successful" details="" size="38597" time="1634" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.4.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.4.0" status="release" pubdate="20140529104700" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="6110" time="0" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.pom"/>
+				<evicted-by rev="2.4.4"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="2.4.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.4.4" status="release" pubdate="20141124192900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<metadata-artifact status="no" details="" size="8337" time="0" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.4.4/jackson-databind-2.4.4.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="6.28.0"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="1.2.2"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="1.13.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="successful" details="" size="1076926" time="10213" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.4.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.4.4/jackson-databind-2.4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.4.4" status="release" pubdate="20141124191700" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<metadata-artifact status="no" details="" size="6556" time="0" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="2.4.4"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="1.13.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="successful" details="" size="225302" time="3109" location="/Users/cetinajero/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.4.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-events_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828201220" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3638" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-events_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-events_2.11/6.27.0/util-events_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="util-events_2.11" type="jar" ext="jar" status="successful" details="" size="33195" time="1432" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-events_2.11/jars/util-events_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-events_2.11/6.27.0/util-events_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-thrift_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828165543" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="8434" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-thrift_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-thrift_2.11/6.28.0/finagle-thrift_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="finagle-thrift_2.11" type="jar" ext="jar" status="successful" details="" size="386485" time="10916" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-thrift_2.11/jars/finagle-thrift_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-thrift_2.11/6.28.0/finagle-thrift_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="scrooge-core_2.11">
+			<revision name="4.0.0" status="release" pubdate="20150828165544" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/scrooge" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3508" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/scrooge-core_2.11/ivy-4.0.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/scrooge-core_2.11/4.0.0/scrooge-core_2.11-4.0.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-thrift_2.11" conf="compile, runtime" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="scrooge-core_2.11" type="jar" ext="jar" status="successful" details="" size="61205" time="2156" location="/Users/cetinajero/.ivy2/cache/com.twitter/scrooge-core_2.11/jars/scrooge-core_2.11-4.0.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/scrooge-core_2.11/4.0.0/scrooge-core_2.11-4.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.thrift" name="libthrift">
+			<revision name="0.5.0" status="release" pubdate="20111222212101" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<metadata-artifact status="no" details="" size="2633" time="0" location="/Users/cetinajero/.ivy2/cache/org.apache.thrift/libthrift/ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-thrift_2.11" conf="compile, runtime" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="libthrift" type="jar" ext="jar" status="successful" details="" size="262212" time="3294" location="/Users/cetinajero/.ivy2/cache/org.apache.thrift/libthrift/jars/libthrift-0.5.0.jar">
+						<origin-location is-local="false" location="http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.5.8" status="release" pubdate="20090611055802" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="3474" time="0" location="/Users/cetinajero/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.5.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="1.5.8" rev-constraint-default="1.5.8" rev-constraint-dynamic="1.5.8" callerrev="0.5.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="23445" time="885" location="/Users/cetinajero/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.5.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-httpx-compat_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828201222" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7160" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-httpx-compat_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-httpx-compat_2.11/6.28.0/finagle-httpx-compat_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="finagle-httpx-compat_2.11" type="jar" ext="jar" status="successful" details="" size="20971" time="1475" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-httpx-compat_2.11/jars/finagle-httpx-compat_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-httpx-compat_2.11/6.28.0/finagle-httpx-compat_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-httpx_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828201219" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="8030" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-httpx_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-httpx_2.11/6.28.0/finagle-httpx_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-httpx-compat_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="finagle-httpx_2.11" type="jar" ext="jar" status="successful" details="" size="708244" time="5371" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-httpx_2.11/jars/finagle-httpx_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-httpx_2.11/6.28.0/finagle-httpx_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-http_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828201228" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="8027" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-http_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-http_2.11/6.28.0/finagle-http_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-httpx-compat_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="finagle-http_2.11" type="jar" ext="jar" status="successful" details="" size="714615" time="8782" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-http_2.11/jars/finagle-http_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-http_2.11/6.28.0/finagle-http_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-lang" name="commons-lang">
+			<revision name="2.6" status="release" pubdate="20110116152147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<metadata-artifact status="no" details="" size="6522" time="0" location="/Users/cetinajero/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="6.28.0"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.5.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="successful" details="" size="284220" time="6566" location="/Users/cetinajero/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.6"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.5.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-core_2.11">
+			<revision name="6.28.0" status="release" pubdate="20150828165505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/finagle" extra-info.apiURL="https://twitter.github.io/finagle/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="10712" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-core_2.11/ivy-6.28.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/finagle-core_2.11/6.28.0/finagle-core_2.11-6.28.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-httpx-compat_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-thrift_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.28.0" rev-constraint-default="6.28.0" rev-constraint-dynamic="6.28.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="finagle-core_2.11" type="jar" ext="jar" status="successful" details="" size="2865168" time="23864" location="/Users/cetinajero/.ivy2/cache/com.twitter/finagle-core_2.11/jars/finagle-core_2.11-6.28.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/finagle-core_2.11/6.28.0/finagle-core_2.11-6.28.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="jsr166e">
+			<revision name="1.0.0" status="release" pubdate="20130419160245" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/twitter/jsr166e" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="CC0 1.0 Universal" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2830" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/jsr166e/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/jsr166e/1.0.0/jsr166e-1.0.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="jsr166e" type="jar" ext="jar" status="successful" details="" size="9988" time="746" location="/Users/cetinajero/.ivy2/cache/com.twitter/jsr166e/jars/jsr166e-1.0.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/jsr166e/1.0.0/jsr166e-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-codec_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165509" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3779" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-codec_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-codec_2.11/6.27.0/util-codec_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="util-codec_2.11" type="jar" ext="jar" status="successful" details="" size="7600" time="773" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-codec_2.11/jars/util-codec_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-codec_2.11/6.27.0/util-codec_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.9" status="release" pubdate="20131220205700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<metadata-artifact status="no" details="" size="9982" time="0" location="/Users/cetinajero/.ivy2/cache/commons-codec/commons-codec/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.pom"/>
+				<caller organisation="com.twitter" name="util-codec_2.11" conf="compile, runtime" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="263965" time="3736" location="/Users/cetinajero/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-logging_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165502" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3932" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-logging_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-logging_2.11/6.27.0/util-logging_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="util-logging_2.11" type="jar" ext="jar" status="successful" details="" size="236008" time="3633" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-logging_2.11/jars/util-logging_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-logging_2.11/6.27.0/util-logging_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-jvm_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165503" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3896" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-jvm_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-jvm_2.11/6.27.0/util-jvm_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="util-jvm_2.11" type="jar" ext="jar" status="successful" details="" size="158717" time="3233" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-jvm_2.11/jars/util-jvm_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-jvm_2.11/6.27.0/util-jvm_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-stats_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165508" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3636" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-stats_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-stats_2.11/6.27.0/util-stats_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="util-logging_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="util-stats_2.11" type="jar" ext="jar" status="successful" details="" size="138445" time="1210" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-stats_2.11/jars/util-stats_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-stats_2.11/6.27.0/util-stats_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-hashing_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165507" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3865" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-hashing_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-hashing_2.11/6.27.0/util-hashing_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="util-hashing_2.11" type="jar" ext="jar" status="successful" details="" size="51282" time="2102" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-hashing_2.11/jars/util-hashing_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-hashing_2.11/6.27.0/util-hashing_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-collection_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165506" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4363" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-collection_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-collection_2.11/6.27.0/util-collection_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="util-collection_2.11" type="jar" ext="jar" status="successful" details="" size="85707" time="1458" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-collection_2.11/jars/util-collection_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-collection_2.11/6.27.0/util-collection_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.1" status="release" pubdate="20080831054528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="4716" time="0" location="/Users/cetinajero/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="successful" details="" size="575389" time="3294" location="/Users/cetinajero/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140203154500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<metadata-artifact status="no" details="" size="5504" time="0" location="/Users/cetinajero/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="1.13.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="6.27.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2228009" time="15034" location="/Users/cetinajero/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="15.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="16.0.1"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.4.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091013173500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/Users/cetinajero/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="successful" details="" size="2497" time="1157" location="/Users/cetinajero/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="2.0.1" status="release" pubdate="20120729161759" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2519" time="0" location="/Users/cetinajero/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="1.2.2"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="6.27.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="successful" details="" size="31866" time="1347" location="/Users/cetinajero/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-app_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165455" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3779" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-app_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-app_2.11/6.27.0/util-app_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="util-events_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-logging_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="util-app_2.11" type="jar" ext="jar" status="successful" details="" size="137709" time="2467" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-app_2.11/jars/util-app_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-app_2.11/6.27.0/util-app_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-registry_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165458" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3645" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-registry_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-registry_2.11/6.27.0/util-registry_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="util-app_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="1.13.0"/>
+				<artifacts>
+					<artifact name="util-registry_2.11" type="jar" ext="jar" status="successful" details="" size="34283" time="5086" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-registry_2.11/jars/util-registry_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-registry_2.11/6.27.0/util-registry_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-core_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165457" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4058" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-core_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-core_2.11/6.27.0/util-core_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="util-registry_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-app_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-codec_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-logging_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-stats_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="1.13.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="util-core_2.11" type="jar" ext="jar" status="successful" details="" size="1438780" time="10381" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-core_2.11/jars/util-core_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-core_2.11/6.27.0/util-core_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.4" status="release" pubdate="20150430080700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/Users/cetinajero/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
+				<caller organisation="com.twitter" name="util-core_2.11" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="successful" details="" size="423753" time="2338" location="/Users/cetinajero/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-function_2.11">
+			<revision name="6.27.0" status="release" pubdate="20150828165505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/util" extra-info.apiURL="https://twitter.github.io/util/docs/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3500" time="0" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-function_2.11/ivy-6.27.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/twitter/util-function_2.11/6.27.0/util-function_2.11-6.27.0.pom"/>
+				<caller organisation="com.twitter" name="util-core_2.11" conf="compile, runtime" rev="6.27.0" rev-constraint-default="6.27.0" rev-constraint-dynamic="6.27.0" callerrev="6.27.0"/>
+				<artifacts>
+					<artifact name="util-function_2.11" type="jar" ext="jar" status="successful" details="" size="2073" time="1238" location="/Users/cetinajero/.ivy2/cache/com.twitter/util-function_2.11/jars/util-function_2.11-6.27.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/twitter/util-function_2.11/6.27.0/util-function_2.11-6.27.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.10.1.Final" status="release" pubdate="20150323115400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7197" time="0" location="/Users/cetinajero/.ivy2/cache/io.netty/netty/ivy-3.10.1.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty/3.10.1.Final/netty-3.10.1.Final.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="3.10.1.Final" rev-constraint-default="3.10.1.Final" rev-constraint-dynamic="3.10.1.Final" callerrev="6.28.0"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="successful" details="" size="1308662" time="11179" location="/Users/cetinajero/.ivy2/cache/io.netty/netty/bundles/netty-3.10.1.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty/3.10.1.Final/netty-3.10.1.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.4" status="release" pubdate="20150129001600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4971" time="0" location="/Users/cetinajero/.ivy2/cache/org.scalatest/scalatest_2.11/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.pom"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="1.2.2"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="bundle" ext="jar" status="successful" details="" size="7185789" time="60037" location="/Users/cetinajero/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="1.3.2" status="release" pubdate="20080831054530" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="3263" time="0" location="/Users/cetinajero/.ivy2/cache/commons-io/commons-io/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-io/commons-io/1.3.2/commons-io-1.3.2.pom"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="1.2.2"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="successful" details="" size="87776" time="1574" location="/Users/cetinajero/.ivy2/cache/commons-io/commons-io/jars/commons-io-1.3.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.2" status="release" pubdate="20140723003900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/cetinajero/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="successful" details="" size="4391629" time="26909" location="/Users/cetinajero/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150803100311" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/cetinajero/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="com.twitter" name="util-registry_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-events_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0.5"/>
+				<caller organisation="com.twitter" name="util-hashing_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-zipkin_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
+				<caller organisation="com.twitter" name="twitter-server_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.13.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="scrooge-core_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="4.0.0"/>
+				<caller organisation="com.twitter" name="util-app_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
+				<caller organisation="default" name="be_restful_with_scala_2.11" conf="test, compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.twitter" name="finagle-thrift_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="util-function_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-stats_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="finagle-core_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="finagle-httpx_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="com.twitter" name="util-core_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-codec_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-logging_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.27.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.4"/>
+				<caller organisation="com.twitter" name="finagle-httpx-compat_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="6.28.0"/>
+				<caller organisation="com.github.dvarelap" name="peregrine_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.2.2"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.4.4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="5745606" time="45502" location="/Users/cetinajero/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.4.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
