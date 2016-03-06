@@ -6,3 +6,74 @@ INF 2016/03/05 16:05:38.820 [0:0:0:0:0:0:0:1] GET "/perro" 200 in 6.196ms
 INF 2016/03/05 16:08:05.969 [0:0:0:0:0:0:0:1] GET "/perro" 200 in 0.665ms
 INF 2016/03/05 16:08:08.179 [0:0:0:0:0:0:0:1] GET "/perro" 200 in 0.564ms
 INF 2016/03/05 16:08:26.769 [0:0:0:0:0:0:0:1] GET "/perro" 200 in 149.757ms
+INF 2016/03/05 16:26:19.883 [0:0:0:0:0:0:0:1] GET "/api/users" 200 in 159.066ms
+INF 2016/03/05 16:26:23.202 [0:0:0:0:0:0:0:1] GET "/api/users/1" 404 in 41.508ms
+INF 2016/03/05 16:28:37.511 [0:0:0:0:0:0:0:1] GET "/api/users/1" 200 in 340.699ms
+ERR 2016/03/05 16:38:12.145 For input string: "new"
+ERR 2016/03/05 16:38:12.145 java.lang.NumberFormatException: For input string: "new"
+ERR 2016/03/05 16:38:12.145     at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+ERR 2016/03/05 16:38:12.145     at java.lang.Integer.parseInt(Integer.java:580)
+ERR 2016/03/05 16:38:12.145     at java.lang.Integer.parseInt(Integer.java:615)
+ERR 2016/03/05 16:38:12.145     at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:272)
+ERR 2016/03/05 16:38:12.145     at scala.collection.immutable.StringOps.toInt(StringOps.scala:30)
+ERR 2016/03/05 16:38:12.145     at MyApp$$anonfun$2.apply(app.scala:28)
+ERR 2016/03/05 16:38:12.145     at MyApp$$anonfun$2.apply(app.scala:27)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Controller$$anonfun$addRoute$1$$anonfun$apply$1.apply(Controller.scala:67)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Controller$$anonfun$addRoute$1$$anonfun$apply$1.apply(Controller.scala:67)
+ERR 2016/03/05 16:38:12.145     at com.twitter.finagle.stats.Stat$.timeFuture(Stat.scala:39)
+ERR 2016/03/05 16:38:12.145     at com.twitter.finagle.stats.Stat$.timeFuture(Stat.scala:48)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Controller$$anonfun$addRoute$1.apply(Controller.scala:67)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Controller$$anonfun$addRoute$1.apply(Controller.scala:65)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Router.dispatchRouteOrCallback(Router.scala:33)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.Router.dispatch(Router.scala:14)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.ControllerCollection$$anonfun$dispatch$1.apply(ControllerCollection.scala:28)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.ControllerCollection$$anonfun$dispatch$1.apply(ControllerCollection.scala:27)
+ERR 2016/03/05 16:38:12.145     at scala.collection.LinearSeqOptimized$class.find(LinearSeqOptimized.scala:113)
+ERR 2016/03/05 16:38:12.145     at scala.collection.immutable.List.find(List.scala:84)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.ControllerCollection.dispatch(ControllerCollection.scala:27)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.AppService.attemptRequest(AppService.scala:31)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.AppService.apply(AppService.scala:16)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.AppService.apply(AppService.scala:7)
+ERR 2016/03/05 16:38:12.145     at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilter$$anonfun$apply$1.apply(LoggingFilter.scala:11)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilter$$anonfun$apply$1.apply(LoggingFilter.scala:11)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilterHelper$class.applyLogging(LoggingFilter.scala:21)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilter.applyLogging(LoggingFilter.scala:9)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilter.apply(LoggingFilter.scala:11)
+ERR 2016/03/05 16:38:12.145     at io.peregrine.LoggingFilter.apply(LoggingFilter.scala:9)
+ERR 2016/03/05 16:38:12.145     (...more...)
+INF 2016/03/05 16:38:12.361 [0:0:0:0:0:0:0:1] GET "/api/users/new" 500 in 233.260ms
+INF 2016/03/05 16:38:23.924 [0:0:0:0:0:0:0:1] POST "/api/users/new?name=edgar&age=28" 404 in 39.132ms
+INF 2016/03/05 16:38:30.053 [0:0:0:0:0:0:0:1] POST "/api/users?name=edgar&age=28" 201 in 188.384ms
+INF 2016/03/05 16:38:36.968 [0:0:0:0:0:0:0:1] POST "/api/users?name=edgar2" 200 in 0.689ms
+INF 2016/03/05 16:38:43.777 [0:0:0:0:0:0:0:1] GET "/api/users?name=edgar2" 200 in 52.159ms
+INF 2016/03/05 16:39:02.052 [0:0:0:0:0:0:0:1] POST "/api/users?name=paulina&age=29" 201 in 0.748ms
+INF 2016/03/05 16:39:06.153 [0:0:0:0:0:0:0:1] GET "/api/users?name=paulina&age=29" 200 in 0.800ms
+INF 2016/03/05 16:39:11.386 [0:0:0:0:0:0:0:1] GET "/api/users/0?name=paulina&age=29" 200 in 0.878ms
+INF 2016/03/05 16:39:16.866 [0:0:0:0:0:0:0:1] GET "/api/users/1?name=paulina&age=29" 200 in 0.836ms
+INF 2016/03/05 16:39:35.585 [0:0:0:0:0:0:0:1] POST "/api/users?name=karen&age=24" 201 in 0.633ms
+INF 2016/03/05 16:43:44.231 [0:0:0:0:0:0:0:1] POST "/api/users?name=karen&age=24" 201 in 214.958ms
+INF 2016/03/05 16:43:50.714 [0:0:0:0:0:0:0:1] DELETE "/api/users/1?name=karen&age=24" 204 in 2.883ms
+INF 2016/03/05 16:43:54.225 [0:0:0:0:0:0:0:1] DELETE "/api/users/1?name=karen&age=24" 204 in 0.841ms
+INF 2016/03/05 16:44:02.075 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 204 in 0.623ms
+INF 2016/03/05 16:44:05.603 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 204 in 0.680ms
+INF 2016/03/05 16:44:08.459 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 204 in 0.909ms
+INF 2016/03/05 16:44:15.174 [0:0:0:0:0:0:0:1] POST "/api/users?name=karen&age=24" 201 in 0.984ms
+INF 2016/03/05 16:44:20.155 [0:0:0:0:0:0:0:1] GET "/api/users?name=karen&age=24" 200 in 47.173ms
+INF 2016/03/05 16:44:26.131 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 204 in 0.868ms
+INF 2016/03/05 16:45:21.298 [0:0:0:0:0:0:0:1] POST "/api/users/0?name=karen&age=24" 404 in 83.714ms
+INF 2016/03/05 16:45:25.548 [0:0:0:0:0:0:0:1] POST "/api/users?name=karen&age=24" 201 in 203.162ms
+INF 2016/03/05 16:45:30.735 [0:0:0:0:0:0:0:1] GET "/api/users?name=karen&age=24" 200 in 47.390ms
+INF 2016/03/05 16:45:36.013 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 2.211ms
+INF 2016/03/05 16:46:40.443 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 1.057ms
+INF 2016/03/05 16:46:42.018 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.683ms
+INF 2016/03/05 16:46:47.423 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.749ms
+INF 2016/03/05 16:46:48.181 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.732ms
+INF 2016/03/05 16:46:48.916 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.650ms
+INF 2016/03/05 16:46:49.682 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.710ms
+INF 2016/03/05 16:46:50.617 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 0.757ms
+INF 2016/03/05 16:53:34.058 [0:0:0:0:0:0:0:1] DELETE "/api/users/0?name=karen&age=24" 200 in 206.769ms
+INF 2016/03/05 16:53:38.134 [0:0:0:0:0:0:0:1] POST "/api/users/0?name=karen&age=24" 404 in 37.972ms
+INF 2016/03/05 16:53:41.724 [0:0:0:0:0:0:0:1] POST "/api/users?name=karen&age=24" 201 in 8.722ms
+INF 2016/03/05 16:53:54.569 [0:0:0:0:0:0:0:1] PUT "/api/users/0?name=karen2&age=25" 200 in 1.701ms
+INF 2016/03/05 16:53:59.517 [0:0:0:0:0:0:0:1] GET "/api/users?name=karen2&age=25" 200 in 47.193ms
